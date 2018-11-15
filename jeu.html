@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find The Murderer </title>
+    <link rel="stylesheet" type="text/css" href="jeu.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <div id="conteneurj">
+        <div id="codinglogo"></div>
+        <div id="timer"></div>
+        <div id="rond"> 
+            <div id="personnages">
+                <div id="sonia" onclick="parler(1)"></div>
+                <div id="securite" onclick="parler(2)"></div>
+                <div id="eleve" onclick="parler(3)"></div>
+                <div id="chinois" onclick="parler(4)"></div>
+            </div>
+            <div id="dialogue">
+                <div id="phrase"></div>
+                <button id="accuseroui">Vous êtes en état d'arrestation !</button>
+                <button id="accusenon" onclick="continuer()">Continuer la recherche</button>
+            </div>
+            <div id="couteau" onclick="prendreobjet(1)"></div>
+            <div id="ciseaux" onclick="prendreobjet(2)"></div>
+            <div id="pistolet" onclick="prendreobjet(3)"></div>
+            <div id="poison" onclick="prendreobjet(4)"></div>
+            <div id="serpent" onclick="prendreobjet(5)"></div>
+            <div id="stylo" onclick="prendreobjet(6)"></div>
+            <div id="talon" onclick="prendreobjet(7)"></div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
